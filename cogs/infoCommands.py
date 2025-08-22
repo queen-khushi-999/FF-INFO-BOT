@@ -19,6 +19,7 @@ class InfoCommands(commands.Cog):
         self.bot = bot
         self.api_url = "http://raw.thug4ff.com/info"
         self.generate_url = "https://outfit-aimguard.vercel.app/api/v1/profile"
+        self.profilecarad_url = "https://profile-generator.up.railway.app/api/profile_card"
         self.session = aiohttp.ClientSession()
         self.config_data = self.load_config()
         self.cooldowns = {}
@@ -254,9 +255,10 @@ class InfoCommands(commands.Cog):
                         f"    **└─ CS Rank**: {'' if captain_info.get('showCsRank') else 'Not found'} {captain_info.get('csRankingPoints', 'Not found')} "
                     ])
                 embed.add_field(name="", value="\n".join(guild_info), inline=False)
+                
 
 
-
+            embed.set_image(url=f"https://profile-generator.up.railway.app/api/profile_card?uid={uid}")
             embed.set_footer(text="DEVELOPED BY KHUSHI •")
             await ctx.send(embed=embed)
 
