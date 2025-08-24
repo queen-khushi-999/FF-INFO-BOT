@@ -18,8 +18,8 @@ class InfoCommands(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.api_url = "http://raw.thug4ff.com/info"
-        self.generate_url = "https://profile-generator.up.railway.app/api/profile"
-        self.profilecarad_url = "https://profile-generator.up.railway.app/api/profile_card"
+        self.generate_url = "https://genprofile-24nr.onrender.com/api/profile"
+        self.profilecarad_url = "https://genprofile-24nr.onrender.com/api/profile_card"
         self.session = aiohttp.ClientSession()
         self.config_data = self.load_config()
         self.cooldowns = {}
@@ -196,7 +196,7 @@ class InfoCommands(commands.Cog):
             embed.set_thumbnail(url=ctx.author.display_avatar.url)
 
             embed.add_field(name="", value="\n".join([
-                "**┌  ACCOUNT BASIC INFO**",
+                "**┌  👤ACCOUNT BASIC INFO**",
                 f"**├─ Name**: {basic_info.get('nickname', 'Not found')}",
                 f"**├─ UID**: `{uid}`",
                 f"**├─ Level**: {basic_info.get('level', 'Not found')} (Exp: {basic_info.get('exp', '?')})",
@@ -208,7 +208,7 @@ class InfoCommands(commands.Cog):
           
 
             embed.add_field(name="", value="\n".join([
-                "**┌  ACCOUNT ACTIVITY**",
+                "**┌  🎮ACCOUNT ACTIVITY**",
                 f"**├─ Most Recent OB**: {basic_info.get('releaseVersion', '?')}",
                 f"**├─ Current BP Badges**: {basic_info.get('badgeCnt', 'Not found')}",
                 f"**├─ BR Rank**: {'' if basic_info.get('showBrRank') else 'Not found'} {basic_info.get('rankingPoints', '?')}",
@@ -219,7 +219,7 @@ class InfoCommands(commands.Cog):
             ]), inline=False)
 
             embed.add_field(name="", value="\n".join([
-                "**┌  ACCOUNT OVERVIEW**",
+                "**┌  👕 ACCOUNT OVERVIEW**",
                 f"**├─ Avatar ID**: {profile_info.get('avatarId', 'Not found')}",
                 f"**├─ Banner ID**: {basic_info.get('bannerId', 'Not found')}",
                 f"**├─ Pin ID**: {captain_info.get('pinId', 'Not found') if captain_info else 'Default'}",
@@ -227,7 +227,7 @@ class InfoCommands(commands.Cog):
             ]), inline=False)
 
             embed.add_field(name="", value="\n".join([
-                "**┌  PET DETAILS**",
+                "**┌  🐾 PET DETAILS**",
                 f"**├─ Equipped?**: {'Yes' if pet_info.get('isSelected') else 'Not Found'}",
                 f"**├─ Pet Name**: {pet_info.get('name', 'Not Found')}",
                 f"**├─ Pet Exp**: {pet_info.get('exp', 'Not Found')}",
@@ -236,7 +236,7 @@ class InfoCommands(commands.Cog):
 
             if clan_info:
                 guild_info = [
-                    "**┌  GUILD INFO**",
+                    "**┌  🛡️ GUILD INFO**",
                     f"**├─ Guild Name**: {clan_info.get('clanName', 'Not found')}",
                     f"**├─ Guild ID**: `{clan_info.get('clanId', 'Not found')}`",
                     f"**├─ Guild Level**: {clan_info.get('clanLevel', 'Not found')}",
@@ -258,7 +258,7 @@ class InfoCommands(commands.Cog):
                 
 
 
-            embed.set_image(url=f"https://profile-generator.up.railway.app/api/profile_card?uid={uid}")
+            embed.set_image(url=f"https://genprofile-24nr.onrender.com/api/profile_card?uid={uid}")
             embed.set_footer(text="DEVELOPED BY KHUSHI •")
             await ctx.send(embed=embed)
 
