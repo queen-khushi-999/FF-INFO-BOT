@@ -260,6 +260,7 @@ class InfoCommands(commands.Cog):
 
             embed.set_image(url=f"https://genprofile-24nr.onrender.com/api/profile_card?uid={uid}")
             embed.set_footer(text="DEVELOPED BY KHUSHI •")
+            embed.description += "\n🔗 JOIN : https://discord.gg/xtjxtM3upQ"
             await ctx.send(embed=embed)
 
             if region and uid:
