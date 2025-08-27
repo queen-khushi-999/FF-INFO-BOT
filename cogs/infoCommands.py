@@ -256,7 +256,7 @@ class InfoCommands(commands.Cog):
                     ])
                 embed.add_field(name="", value="\n".join(guild_info), inline=False)
                 embed.add_field(
-                    name="📌 JOIN : [QUEEN CHEATS](https://discord.gg/xtjxtM3upQ)",
+                    name="📌 JOIN : https://discord.gg/xtjxtM3upQ",
                     value="",
                     inline=False
                 )
