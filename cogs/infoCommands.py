@@ -255,15 +255,16 @@ class InfoCommands(commands.Cog):
                         f"    **└─ CS Rank**: {'' if captain_info.get('showCsRank') else 'Not found'} {captain_info.get('csRankingPoints', 'Not found')} "
                     ])
                 embed.add_field(name="", value="\n".join(guild_info), inline=False)
-                
+                embed.add_field(
+                    name="📌 JOIN",
+                    value="[QUEEN CHEATS](https://discord.gg/xtjxtM3upQ)",
+                    inline=False
+                )
 
 
             embed.set_image(url=f"https://genprofile-24nr.onrender.com/api/profile_card?uid={uid}")
             embed.set_footer(text="DEVELOPED BY KHUSHI •")
-            if embed.description:
-                embed.description += "\n📌 JOIN : https://discord.gg/xtjxtM3upQ"
-            else:
-                embed.description = "\n📌 JOIN : https://discord.gg/xtjxtM3upQ"
+            
             await ctx.send(embed=embed)
 
             if region and uid:
