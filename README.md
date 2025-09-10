@@ -1,3 +1,5 @@
+# IF YOU WANT INFO BOT PROJECT
+# •  JOIN MY SERVER - https://discord.gg/xtjxtM3upQ
 #  Free Fire info Discord Bot
 
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
@@ -25,11 +27,7 @@ It returns profile data such as level, rank, guild info, credit score, social pr
 
 ## Installation
 
-1. Clone this repository:
-   ```sh
-   git clone https://github.com/paulafredo/free-freefire-info-bot
-   cd your-repo
-   ```
+
 2. Create and activate a virtual environment:
    ```sh
    python -m venv .venv
@@ -123,4 +121,5 @@ This project is licensed under the MIT License. Feel free to use and modify it.
 ## Author
 
 [Paul Alfredo](https://github.com/paulafredo)
+
 
