@@ -1,5 +1,5 @@
 # IF YOU WANT INFO BOT PROJECT
-# •  JOIN MY SERVER - https://discord.gg/xtjxtM3upQ
+•  JOIN MY SERVER - https://discord.gg/xtjxtM3upQ
 #  Free Fire info Discord Bot
 
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
@@ -121,5 +121,6 @@ This project is licensed under the MIT License. Feel free to use and modify it.
 ## Author
 
 [Paul Alfredo](https://github.com/paulafredo)
+
 
 
